@@ -1,0 +1,58 @@
+<mxfile host="65bd71144e" modified="2020-12-03T14:01:03.700Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.47.3 Chrome/78.0.3904.130 Electron/7.3.2 Safari/537.36" etag="Txg93yYvXnZ1vldOHDiP" version="13.10.0" type="embed">
+    <diagram id="jSLLv1ESaGV04ejl2tT0" name="ページ1">
+        <mxGraphModel dx="1174" dy="1023" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="32" value="&lt;span style=&quot;color: rgb(32, 33, 36); font-weight: 400; text-align: left; background-color: rgb(255, 255, 255); font-size: 29px;&quot;&gt;modeling&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;rounded=1;sketch=0;fontFamily=Verdana;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="40" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="投稿機能の情報" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=36;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=0;html=1;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="360" width="230" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="・投稿者名の表示&#10;・投稿一覧&#10;　（症状別分類で一覧表示、&#10;　　nickname、アドバイス内容）&#10;・投稿内容&#10;　（症状別分類、発症時期、&#10;　　相談先、アドバイス内容、&#10;　　他のDr.Parentsと共有したいこと、&#10;　　画像、子供の年齢、就学状況）&#10;・投稿編集/削除 機能&#10;・投稿詳細を表示&#10;　（投稿内容の表示）&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;" parent="71" vertex="1">
+                    <mxGeometry y="36" width="230" height="214" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="ユーザー機能関の情報" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=0;html=1;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="80" width="200" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="   ・ニックネーム&#10;   ・メールアドレス&#10;   ・パスワード&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;" parent="73" vertex="1">
+                    <mxGeometry y="30" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="コメント機能の情報" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;sketch=0;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="360" width="200" height="141" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="  ・コメント者名の表示&#10;  ・いいね風機能&#10;  ・コメント内容" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=middle;resizable=0;rotatable=0;part=1;" parent="75" vertex="1">
+                    <mxGeometry y="30" width="200" height="111" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.685;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.026;exitY=0.325;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="72" target="76">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="312" y="395" as="sourcePoint"/>
+                        <mxPoint x="608" y="397" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="78" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1.01;exitY=0.417;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="74" target="75">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="560" y="130" as="sourcePoint"/>
+                        <mxPoint x="720" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="79" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.414;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.47;exitY=0.004;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="71" target="74">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="410" y="360" as="sourcePoint"/>
+                        <mxPoint x="570" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="81" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;1つの投稿に対し、&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;コメントは複数ある&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="514" y="490" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="&lt;div style=&quot;text-align: left&quot;&gt;ユーザーは&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;何度も投稿できる&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="190" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="&lt;div style=&quot;text-align: left&quot;&gt;ユーザーは何度も&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;コメントできる&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="800" y="190" width="140" height="70" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
