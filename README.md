@@ -33,6 +33,10 @@ Things you may want to cover:
 | email    | string | null: false |
 | password | strings| null: false |
 
+### Association
+ - has_many :comments
+ - has_many :posts
+
 ## posts テーブル
 
 | column               | Type       | Options                        |
@@ -46,6 +50,10 @@ Things you may want to cover:
 | enrollment_status-id | integer    | null: false                    | 
 | text                 | text       | null: false                    |
 
+### Association
+ - belongs_to :user
+ - has_many :comments
+
 ## comments テーブル
 
 | column  | Type       | Options                        |
@@ -54,6 +62,9 @@ Things you may want to cover:
 | post_id | references | null: false, foreign_key: true |
 | comment | text       | null: false                    |
 
+### Association
+ - belongs_to :user
+ - belongs_to :post
 
 
 
