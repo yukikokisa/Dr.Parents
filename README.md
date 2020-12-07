@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version  _6.0.0_
 
 * System dependencies
 
@@ -22,3 +22,50 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+#テーブル設計
+
+## users テーブル
+
+| column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| name     | string | null: false |
+| email    | string | null: false |
+| password | strings| null: false |
+
+### Association
+ - has_many :comments
+ - has_many :posts
+
+## posts テーブル
+
+| column               | Type       | Options                        |
+| -------------------- | ---------- | ------------------------------ |
+| user_id              | references | null: false, foreign_key: true |
+| symptoms_id          | integer    | null: false                    |
+| oneset_time_id       | integer    | null: false                    |
+| contact_id           | integer    | null: false                    |
+| advice_id            | integer    | null: false                    |
+| child_age            | string     | null: false                    |
+| enrollment_status-id | integer    | null: false                    | 
+| text                 | text       | null: false                    |
+
+### Association
+ - belongs_to :user
+ - has_many :comments
+
+## comments テーブル
+
+| column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| user_id | references | null: false, foreign_key: true |
+| post_id | references | null: false, foreign_key: true |
+| comment | text       | null: false                    |
+
+### Association
+ - belongs_to :user
+ - belongs_to :post
+
+
+
+
