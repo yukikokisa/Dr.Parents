@@ -29,7 +29,7 @@ Things you may want to cover:
 
 | column   | Type   | Options     |
 | -------- | ------ | ----------- |
-| name     | string | null: false |
+| nickname     | string | null: false |
 | email    | string | null: false |
 | password | strings| null: false |
 
@@ -47,8 +47,8 @@ Things you may want to cover:
 | contact_id           | integer    | null: false                    |
 | advice_id            | integer    | null: false                    |
 | child_age            | string     | null: false                    |
-| enrollment_status-id | integer    | null: false                    | 
-| text                 | text       | null: false                    |
+| enrollment_status_id | integer    | null: false                    | 
+| text                 | text       |                                |
 
 ### Association
  - belongs_to :user
