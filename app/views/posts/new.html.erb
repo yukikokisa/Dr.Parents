@@ -2,6 +2,9 @@
   <div class="container">
     <h3>他のDr.Parentsと共有しよう</h3>
     <%= form_with(model: @post, local: true) do |f| %>
+
+    <%= render 'shared/error_messages', model: f.object  %>
+
       <div class="weight-bold-text">
       症状
         <span class="indispensable">必須</span>
