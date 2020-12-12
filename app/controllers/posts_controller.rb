@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!, only: :new
+
   def index
     @posts = Post.all
   end
@@ -8,7 +10,12 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
+    @post = Post.create(post_params)
+    if @post.save
+      render :create
+    else
+      render :new
+    end
   end
 
   private
