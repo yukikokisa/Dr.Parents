@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_12_08_115019) do
 
   create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.integer "symptoms_id", null: false
+    t.integer "symptom_id", null: false
     t.integer "onset_time_id", null: false
     t.integer "contact_id", null: false
     t.integer "advice_id", null: false
