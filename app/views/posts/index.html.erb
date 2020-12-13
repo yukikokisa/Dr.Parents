@@ -1,13 +1,5 @@
 <div class="contents row">
   <% @posts.each do |post| %>
-    <div class="content_post" >
-      <p><%= post.symptom.name %></p>
-      <div class="content_advice">
-        <p><%= post.advice.name %></p>
-      <span class="name">
-        <%= post.user.nickname %>
-      </span>
-
-    </div>
+    <%= render partial: "posts/post", locals: { post: post } %>
   <% end %>
 </div>
