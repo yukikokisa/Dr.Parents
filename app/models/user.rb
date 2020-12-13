@@ -7,6 +7,6 @@ class User < ApplicationRecord
   has_many :posts
 
   with_options presence: true do
-    validates :nickname,         length: { maximum: 6 }
+    validates :nickname, length: { maximum: 6 }
   end
 end
