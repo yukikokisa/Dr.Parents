@@ -1,0 +1,42 @@
+<div class="contents row">
+  <div class="content_post" >
+    <div class="more">
+      <ul class="more_list">
+        <li>
+          <%= link_to '編集', edit_post_path(@post.id), method: :get %>
+        </li>
+        <li>
+          <%= link_to '削除', post_path(@post.id), method: :delete %>
+        </li>
+      </ul>
+    </div>
+    <table class="detail-table">
+     <tbody>
+       <tr>
+         <th class="detail-item">症状</th>
+         <td class="detail-value"><%= @post.user.nickname %></td>
+       </tr>
+       <tr>
+         <th class="detail-item">アドバイス内容</th>
+         <td class="detail-value"><%= @post.advice.name %></td>
+       </tr>
+       <tr>
+         <th class="detail-item">相談先</th>
+         <td class="detail-value"><%= @post.onset_time.name %></td>
+       </tr>
+       <tr>
+         <th class="detail-item">Dr.Parentsと共有したい事</th>
+         <td class="detail-value"><%= @post.text %></td>
+       </tr>
+       <tr>
+         <th class="detail-item">年齢</th>
+         <td class="detail-value"><%= @post.child_age %></td>
+       </tr>
+       <tr>
+         <th class="detail-item">就園状況</th>
+         <td class="detail-value"><%= @post.enrollment_status.name %></td>
+       </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
