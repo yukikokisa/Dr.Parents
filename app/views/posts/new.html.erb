@@ -1,42 +1,42 @@
 <div class="contents row">
   <div class="container">
-    <h3>他のDr.Parentsと共有しよう</h3>
+    <h3>他のDr.Parentsと共有しよう!</h3>
     <%= form_with(model: @post, local: true) do |f| %>
 
     <%= render 'shared/error_messages', model: f.object  %>
 
       <div class="weight-bold-text">
       症状
-        <span class="indispensable">必須</span>
+        <span class="indispensable">[必須]</span>
       </div>
       <%= f.collection_select(:symptom_id, Symptom.all, :id, :name, {}, {class:"select-box", id:"symptom-category"}) %>
       <div class="weight-bold-text">
       時期
-        <span class="indispensable">必須</span>
+        <span class="indispensable">[必須]</span>
       </div>
       <%= f.collection_select(:onset_time_id, OnsetTime.all, :id, :name, {}, {class:"select-box", id:"onset_time-category"}) %>
       <div class="weight-bold-text">
       相談先
-        <span class="indispensable">必須</span>
+        <span class="indispensable">[必須]</span>
       </div>
       <%= f.collection_select(:contact_id, Contact.all, :id, :name, {}, {class:"select-box", id:"contact-category"}) %>
       <div class="weight-bold-text">
       アドバイス内容
-        <span class="indispensable">必須</span>
+        <span class="indispensable">[必須]</span>
       </div>
       <%= f.collection_select(:advice_id, Advice.all, :id, :name, {}, {class:"select-box", id:"advice-category"}) %>
       <%= f.text_area :text, placeholder: "他のDr.Parentsに教えてあげたいこと", rows: "10" %>
-      <div class="age-content">
+      <div class="weight-bold-text">
         <div class="age-text">
           <span>こどもの年齢</span>
-          <span class="indispensable">必須</span>
+          <span class="indispensable">[必須] [半角数字]</span>
         </div>
           <%= f.text_field :child_age, class:"child_age-input", id:"child_age", placeholder:"" %>
           <span class="">才</span>
       </div>
       <div class="weight-bold-text">
       こどもの就園状況
-        <span class="indispensable">必須</span>
+        <span class="indispensable">[必須]</span>
       </div>
       <%= f.collection_select(:enrollment_status_id, EnrollmentStatus.all, :id, :name, {}, {class:"select-box", id:"enrollment_status-category"}) %>
       <%= f.submit "SEND" %>
