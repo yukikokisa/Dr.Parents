@@ -16,14 +16,14 @@
       </ul>
   </div>
   <div class="content_advices">
-     <div class="content_advice">
+     <div class="content_advice-1">
         <p><%= post.symptom.name %></p>
      </div>
-     <div class="content_advice">
+     <div class="content_advice-2">
         <p><%= post.advice.name %></p>
      </div>
-     <div class="content_advice">
-        <p><%= post.child_age %></p>
+     <div class="content_advice-3">
+        <p><%= "#{post.child_age}才" %></p>
      </div>  
       <span class="name">
         <a href="/users/<%= post.user.id %>">
