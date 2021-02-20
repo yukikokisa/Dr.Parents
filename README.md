@@ -1,6 +1,6 @@
-<img width="1316" alt="投稿一覧" src="https://user-images.githubusercontent.com/70472160/107139548-4e377900-695f-11eb-8b2d-414a324a4ec0.gif">
+<img width="1316" alt="投稿一覧" src="">
 
-<img width="1316" alt="投稿一覧" src="https://user-images.githubusercontent.com/70472160/107138853-6bb61400-695a-11eb-8140-48abff5ed3b9.gif">
+<img width="1316" alt="投稿一覧" src="f">
 
 <h2 align="center">Dr.Parents</h2>
 
