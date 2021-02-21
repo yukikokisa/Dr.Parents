@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.content_advices{
+  font-family: '游ゴシック';
+}
+
+.content_advice  {
+  font-size : 10px;
+}
+
 div.contents.row div.content_post {
   border: 5px solid #aaa;
   margin: 15px 0;
@@ -12,4 +20,8 @@ div.contents.row div.content_post {
   background-size: cover;
   background-position: center center;
   border-radius: 3px;
+}
+
+.detail-item {
+  font-family: '游ゴシック';
 }
